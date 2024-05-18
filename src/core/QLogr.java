@@ -1,16 +1,16 @@
 package core;
 
 public class QLogr {
-    private int logLevel = 0;
+    private static int logLevel = 0;
 
     public static void info(String msg) {
-        System.out.println(msg);
+        LogHandler.logMessage(msg,LogType.INFO,logLevel);
     }
     public static void warn(String msg) {
-        System.out.println(msg);
+        LogHandler.logMessage(msg,LogType.WARNING,logLevel);
     }
     public static void err(String msg) {
-        System.out.println(msg);
+        LogHandler.logMessage(msg,LogType.ERROR,logLevel);
     }
 
     public int getLogLevel() {
