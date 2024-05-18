@@ -9,8 +9,8 @@ public enum LogType {
     FATAL(0, "Fatal");
 
 
-    public final int level;
-    public final String label;
+    private final int level;
+    private final String label;
 
     LogType(int _level, String _label) {
         level = _level;
