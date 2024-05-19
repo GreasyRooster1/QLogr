@@ -2,7 +2,7 @@ package core.Formats;
 
 import core.FormatTemplate;
 
-import static core.Styling.Color.*;
+import static core.Styling.Style.*;
 
 public class DefaultFormat extends FormatTemplate {
     public DefaultFormat() {

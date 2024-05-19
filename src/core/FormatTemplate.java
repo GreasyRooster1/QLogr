@@ -1,6 +1,8 @@
 package core;
 
-import core.Styling.Color;
+import core.Styling.Style;
+
+import static core.Styling.Style.*;
 
 public abstract class FormatTemplate {
     private String prefix="";
@@ -9,13 +11,13 @@ public abstract class FormatTemplate {
     private String logTypeSeparator="";
     private String timestampSeparator="";
 
-    private Color seperatorColor = Color.RESET_ALL;
-    private Color timestampColor = Color.RESET_ALL;
-    private Color prefixColor = Color.RESET_ALL;
-    private Color suffixColor = Color.RESET_ALL;
+    private Style seperatorStyle = RESET_ALL;
+    private Style timestampStyle = RESET_ALL;
+    private Style prefixStyle = Style.RESET_ALL;
+    private Style suffixStyle = Style.RESET_ALL;
 
-    private String[] logTypeColors = {Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString()};
-    private String[] messageColors = {Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString()};
+    private String[] logTypeColors = {Style.RESET_ALL.toString(), Style.RESET_ALL.toString(), Style.RESET_ALL.toString(), Style.RESET_ALL.toString(), Style.RESET_ALL.toString(), Style.RESET_ALL.toString()};
+    private String[] messageColors = {Style.RESET_ALL.toString(), Style.RESET_ALL.toString(), Style.RESET_ALL.toString(), Style.RESET_ALL.toString(), Style.RESET_ALL.toString(), Style.RESET_ALL.toString()};
 
     public String getPrefix() {
         return prefix;
@@ -49,20 +51,20 @@ public abstract class FormatTemplate {
         this.timestampSeparator = timestampSeparator;
     }
 
-    public Color getSeperatorColor() {
-        return seperatorColor;
+    public Style getSeperatorColor() {
+        return seperatorStyle;
     }
 
-    public void setSeperatorColor(Color seperatorColor) {
-        this.seperatorColor = seperatorColor;
+    public void setSeperatorColor(Style seperatorStyle) {
+        this.seperatorStyle = seperatorStyle;
     }
 
-    public Color getTimestampColor() {
-        return timestampColor;
+    public Style getTimestampColor() {
+        return timestampStyle;
     }
 
-    public void setTimestampColor(Color timestampColor) {
-        this.timestampColor = timestampColor;
+    public void setTimestampColor(Style timestampStyle) {
+        this.timestampStyle = timestampStyle;
     }
 
     public String[] getLogTypeColors() {
@@ -73,19 +75,19 @@ public abstract class FormatTemplate {
         this.logTypeColors = logTypeColors;
     }
 
-    public Color getPrefixColor() {
-        return prefixColor;
+    public Style getPrefixColor() {
+        return prefixStyle;
     }
 
-    public void setPrefixColor(Color prefixColor) {
-        this.prefixColor = prefixColor;
+    public void setPrefixColor(Style prefixStyle) {
+        this.prefixStyle = prefixStyle;
     }
 
-    public Color getSuffixColor() {
-        return suffixColor;
+    public Style getSuffixColor() {
+        return suffixStyle;
     }
-    public void setSuffixColor(Color suffixColor) {
-        this.suffixColor = suffixColor;
+    public void setSuffixColor(Style suffixStyle) {
+        this.suffixStyle = suffixStyle;
     }
 
     public String[] getMessageColors() {

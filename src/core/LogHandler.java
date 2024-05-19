@@ -2,7 +2,7 @@ package core;
 
 import core.Formats.DefaultFormat;
 
-import static core.Styling.Color.*;
+import static core.Styling.Effect.*;
 
 public class LogHandler {
     private static FormatTemplate ft = new DefaultFormat();
