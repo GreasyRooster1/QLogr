@@ -7,9 +7,11 @@ public abstract class FormatTemplate {
     private String logTypeSeparator;
     private String timestampSeparator;
 
-    private Color seperatorColor;
-    private Color timestampColor;
-    private Color messageColor;
+    private Color seperatorColor = Color.RESET_ALL;
+    private Color timestampColor = Color.RESET_ALL;
+    private Color messageColor = Color.RESET_ALL;
+    private Color prefixColor = Color.RESET_ALL;
+    private Color suffixColor = Color.RESET_ALL;
     private Color[] logTypeColors;
 
     public String getPrefix() {
@@ -74,5 +76,20 @@ public abstract class FormatTemplate {
 
     public void setLogTypeColors(Color[] logTypeColors) {
         this.logTypeColors = logTypeColors;
+    }
+
+    public Color getPrefixColor() {
+        return prefixColor;
+    }
+
+    public void setPrefixColor(Color prefixColor) {
+        this.prefixColor = prefixColor;
+    }
+
+    public Color getSuffixColor() {
+        return suffixColor;
+    }
+    public void setSuffixColor(Color suffixColor) {
+        this.suffixColor = suffixColor;
     }
 }
