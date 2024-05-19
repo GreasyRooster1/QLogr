@@ -1,18 +1,22 @@
 package core;
 
-public abstract class FormatTemplate {
-    private String prefix;
-    private String suffix;
+import java.util.ArrayList;
+import java.util.Collection;
 
-    private String logTypeSeparator;
-    private String timestampSeparator;
+public abstract class FormatTemplate {
+    private String prefix="";
+    private String suffix="";
+
+    private String logTypeSeparator="";
+    private String timestampSeparator="";
 
     private Color seperatorColor = Color.RESET_ALL;
     private Color timestampColor = Color.RESET_ALL;
-    private Color messageColor = Color.RESET_ALL;
     private Color prefixColor = Color.RESET_ALL;
     private Color suffixColor = Color.RESET_ALL;
-    private Color[] logTypeColors;
+
+    private ArrayList<Color> logTypeColors = new ArrayList<>();
+    private ArrayList<Color> messageColors = new ArrayList<>();
 
     public String getPrefix() {
         return prefix;
@@ -62,14 +66,6 @@ public abstract class FormatTemplate {
         this.timestampColor = timestampColor;
     }
 
-    public Color getMessageColor() {
-        return messageColor;
-    }
-
-    public void setMessageColor(Color messageColor) {
-        this.messageColor = messageColor;
-    }
-
     public Color[] getLogTypeColors() {
         return logTypeColors;
     }
@@ -91,5 +87,13 @@ public abstract class FormatTemplate {
     }
     public void setSuffixColor(Color suffixColor) {
         this.suffixColor = suffixColor;
+    }
+
+    public Color[] getMessageColors() {
+        return messageColors;
+    }
+
+    public void setMessageColors(Color[] messageColors) {
+        this.messageColors = messageColors;
     }
 }

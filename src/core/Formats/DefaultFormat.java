@@ -7,6 +7,6 @@ public class DefaultFormat extends FormatTemplate {
     public DefaultFormat() {
         setPrefix("-");
         setSuffix(";");
-        setMessageColor(Color.RED);
+        setMessageColors();
     }
 }
