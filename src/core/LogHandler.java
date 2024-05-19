@@ -2,11 +2,14 @@ package core;
 
 import core.Formats.DefaultFormat;
 
+import java.util.Date;
+
 import static core.Styling.Style.RESET_ALL;
 
 
 public class LogHandler {
     private static FormatTemplate ft = new DefaultFormat();
+
     protected static void logMessage(String message,LogType type,int logLevel){
         if(type.getLevel()>logLevel) {
             return;
@@ -14,14 +17,22 @@ public class LogHandler {
         String formattedMessage = formatMessage(message,type);
         System.out.println(formattedMessage);
     }
+
     private static String formatMessage(String message,LogType type){
         String logTypeColor = ft.getLogTypeColors()[type.getLevel()];
         String messageColor = ft.getMessageColors()[type.getLevel()];
-        return ""+RESET_ALL
-                +ft.getPrefixColor()+ft.getPrefix()+RESET_ALL
-                +logTypeColor+type.getLabel()+RESET_ALL+
+        return ""+RESET_ALL+
+                ft.getPrefixColor()+ft.getPrefix()+RESET_ALL+
+                ft.getTimestampColor()+getTime()+
+                ft.getSeperatorColor()+ft.getTimestampSeparator()+RESET_ALL+
+                logTypeColor+type.getLabel()+RESET_ALL+
                 ft.getSeperatorColor()+ft.getLogTypeSeparator()+RESET_ALL+
                 messageColor+message+RESET_ALL+
                 ft.getSuffix()+RESET_ALL;
+    }
+
+    private static String getTime(){
+        Date date = new Date();
+        return date.toString();
     }
 }

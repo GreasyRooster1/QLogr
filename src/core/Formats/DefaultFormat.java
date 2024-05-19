@@ -24,5 +24,7 @@ public class DefaultFormat extends FormatTemplate {
         });
         setLogTypeSeparator("]: ");
         setPrefix("[");
+        setTimestampSeparator(" | ");
+        setTimestampColor(CYAN);
     }
 }
