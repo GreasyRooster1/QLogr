@@ -12,8 +12,8 @@ public abstract class FormatTemplate {
     private Color prefixColor = Color.RESET_ALL;
     private Color suffixColor = Color.RESET_ALL;
 
-    private Color[] logTypeColors = {Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL};
-    private Color[] messageColors = {Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL};
+    private String[] logTypeColors = {Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString()};
+    private String[] messageColors = {Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString(),Color.RESET_ALL.toString()};
 
     public String getPrefix() {
         return prefix;
@@ -63,11 +63,11 @@ public abstract class FormatTemplate {
         this.timestampColor = timestampColor;
     }
 
-    public Color[] getLogTypeColors() {
+    public String[] getLogTypeColors() {
         return logTypeColors;
     }
 
-    public void setLogTypeColors(Color[] logTypeColors) {
+    public void setLogTypeColors(String[] logTypeColors) {
         this.logTypeColors = logTypeColors;
     }
 
@@ -86,11 +86,11 @@ public abstract class FormatTemplate {
         this.suffixColor = suffixColor;
     }
 
-    public Color[] getMessageColors() {
+    public String[] getMessageColors() {
         return messageColors;
     }
 
-    public void setMessageColors(Color[] messageColors) {
+    public void setMessageColors(String[] messageColors) {
         this.messageColors = messageColors;
     }
 }

@@ -14,8 +14,8 @@ public class LogHandler {
         System.out.println(formattedMessage);
     }
     private static String formatMessage(String message,LogType type){
-        Color logTypeColor = ft.getLogTypeColors()[type.getLevel()];
-        Color messageColor = ft.getMessageColors()[type.getLevel()];
+        String logTypeColor = ft.getLogTypeColors()[type.getLevel()];
+        String messageColor = ft.getMessageColors()[type.getLevel()];
         return ""+RESET_ALL
                 +ft.getPrefixColor()+ft.getPrefix()+RESET_ALL
                 +logTypeColor+type.getLabel()+RESET_ALL+
