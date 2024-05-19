@@ -37,7 +37,17 @@ public enum Style {
     BG_BRIGHT_BLUE("\u001B[104m"),
     BG_BRIGHT_MAGENTA("\u001B[105m"),
     BG_BRIGHT_CYAN("\u001B[106m"),
-    BG_BRIGHT_WHITE("\u001B[107m");
+    BG_BRIGHT_WHITE("\u001B[107m"),
+
+    BLINK("\u001B[5m"),
+
+    UNDERLINE("\u001B[4m"),
+    ITALIC("\u001B[3m"),
+    STRIKETHROUGH("\u001B[9m"),
+    BOLD("\u001B[1m"),
+    THIN("\u001B[2m"),
+
+    ;
 
     private final String code;
 
