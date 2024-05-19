@@ -13,14 +13,14 @@ public enum Color {
     MAGENTA("\u001B[35m"),
     CYAN("\u001B[36m"),
     WHITE("\u001B[37m"),
-    BRIGHT_BLACK("\u001B[38m"),
-    BRIGHT_RED("\u001B[39m"),
-    BRIGHT_GREEN("\u001B[40m"),
-    BRIGHT_YELLOW("\u001B[41m"),
-    BRIGHT_BLUE("\u001B[42m"),
-    BRIGHT_MAGENTA("\u001B[43m"),
-    BRIGHT_CYAN("\u001B[44m"),
-    BRIGHT_WHITE("\u001B[45m");
+    BRIGHT_BLACK("\u001B[90m"),
+    BRIGHT_RED("\u001B[91m"),
+    BRIGHT_GREEN("\u001B[92m"),
+    BRIGHT_YELLOW("\u001B[93m"),
+    BRIGHT_BLUE("\u001B[94m"),
+    BRIGHT_MAGENTA("\u001B[95m"),
+    BRIGHT_CYAN("\u001B[96m"),
+    BRIGHT_WHITE("\u001B[97m");
 
     private final String code;
 
