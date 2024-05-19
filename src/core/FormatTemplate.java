@@ -1,8 +1,5 @@
 package core;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 public abstract class FormatTemplate {
     private String prefix="";
     private String suffix="";
@@ -15,8 +12,8 @@ public abstract class FormatTemplate {
     private Color prefixColor = Color.RESET_ALL;
     private Color suffixColor = Color.RESET_ALL;
 
-    private ArrayList<Color> logTypeColors = new ArrayList<>();
-    private ArrayList<Color> messageColors = new ArrayList<>();
+    private Color[] logTypeColors = {Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL};
+    private Color[] messageColors = {Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL,Color.RESET_ALL};
 
     public String getPrefix() {
         return prefix;
