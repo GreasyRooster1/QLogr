@@ -1,9 +1,8 @@
 package core.Formats;
 
-import core.Color;
 import core.FormatTemplate;
 
-import static core.Color.*;
+import static core.Styling.Color.*;
 
 public class DefaultFormat extends FormatTemplate {
     public DefaultFormat() {

@@ -1,7 +1,6 @@
-package core;
+package core.Styling;
 
 public enum Color {
-    RESET_ALL("\u001B[0m"),
     RESET_FG("\u001B[39m"),
     RESET_BG("\u001B[49m"),
 

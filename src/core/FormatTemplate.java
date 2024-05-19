@@ -1,5 +1,7 @@
 package core;
 
+import core.Styling.Color;
+
 public abstract class FormatTemplate {
     private String prefix="";
     private String suffix="";
