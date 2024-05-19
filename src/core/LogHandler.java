@@ -2,6 +2,7 @@ package core;
 
 import core.Formats.DefaultFormat;
 
+import java.util.Calendar;
 import java.util.Date;
 
 import static core.Styling.Style.RESET_ALL;
@@ -32,7 +33,7 @@ public class LogHandler {
     }
 
     private static String getTime(){
-        Date date = new Date();
-        return date.toString();
+        Calendar cal = Calendar.getInstance();
+        return cal.get(Calendar.MONTH)+"/"+cal.get(Calendar.DAY_OF_MONTH)+"/"+cal.get(Calendar.YEAR)+"-"+Calendar.HOUR_OF_DAY+":"+cal.get(Calendar.MINUTE)+":"+cal.get(Calendar.SECOND)+"."+cal.get(Calendar.MILLISECOND);
     }
 }
