@@ -6,8 +6,6 @@ import static core.Styling.Style.*;
 
 public class DefaultFormat extends FormatTemplate {
     public DefaultFormat() {
-        setPrefix("-");
-        setSuffix(";");
         setLogTypeColors(new String[]{
                 ""+BOLD+BG_BRIGHT_RED+BLACK,
                 BG_RED+BLACK.toString(),
@@ -16,5 +14,15 @@ public class DefaultFormat extends FormatTemplate {
                 GREEN.toString(),
                 MAGENTA.toString(),
         });
+        setMessageColors(new String[]{
+                ""+BOLD+BRIGHT_RED,
+                BRIGHT_RED.toString(),
+                RED.toString(),
+                BRIGHT_WHITE.toString(),
+                WHITE.toString(),
+                BRIGHT_BLACK.toString(),
+        });
+        setLogTypeSeparator("]: ");
+        setPrefix("[");
     }
 }
