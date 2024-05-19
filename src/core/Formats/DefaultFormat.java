@@ -4,7 +4,7 @@ import core.FormatTemplate;
 
 public class DefaultFormat extends FormatTemplate {
     public DefaultFormat() {
-        setLogPrefix("-");
-        setLogSuffix(";");
+        setPrefix("-");
+        setSuffix(";");
     }
 }
