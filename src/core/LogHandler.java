@@ -12,6 +12,6 @@ public class LogHandler {
         System.out.println(formattedMessage);
     }
     private static String formatMessage(String message,LogType type){
-        return ft.getPrefix()+type.getLabel()+" | "+message+ft.getSuffix();
+        return ft.getPrefix()+type.getLabel()+" | "+ft.getMessageColor()+message+ft.getSuffix();
     }
 }
