@@ -2,6 +2,7 @@ package core;
 
 
 import static core.QLogr.*;
+import core.LogHandler.*;
 
 public class Main {
     public static void main(String[] args) {

@@ -8,7 +8,7 @@ import java.util.Date;
 import static core.Styling.Style.RESET_ALL;
 
 
-public class LogHandler {
+class LogHandler {
     private static FormatTemplate ft = new DefaultFormat();
 
     protected static void logMessage(String message,LogType type,int logLevel){
