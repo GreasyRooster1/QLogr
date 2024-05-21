@@ -13,7 +13,7 @@ public class FileHandler {
             }
         } catch (IOException e) {
             QLogr.err("Failed to create log file "+outputFilePath+"!");
-            QLogr.setOutputToFile(false);
+            QLogr.disableFileOutput();
             QLogr.warn("Disabled log file output");
         }
     }
@@ -28,7 +28,7 @@ public class FileHandler {
             out.close();
         } catch (IOException e) {
             QLogr.err("Failed to write to file "+outputFilePath+"!");
-            QLogr.setOutputToFile(false);
+            QLogr.disableFileOutput();
             QLogr.warn("Disabled log file output");
         }
     }

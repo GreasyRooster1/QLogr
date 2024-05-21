@@ -37,7 +37,14 @@ public class QLogr {
         return outputToFile;
     }
 
-    public static void setOutputToFile(boolean outputToFile) {
-        QLogr.outputToFile = outputToFile;
+    public static void enableFileOutput(String path) {
+        outputToFile = true;
+        FileHandler.createLogFile();
+        FileHandler.setOutputFilePath(path);
+        info("Bound logs to "+path);
+    }
+
+    public static void disableFileOutput() {
+        outputToFile = false;
     }
 }
