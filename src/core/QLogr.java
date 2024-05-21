@@ -2,6 +2,9 @@ package core;
 
 public class QLogr {
     private static int logLevel = 5;
+    private static boolean outputToFile = false;
+
+    //todo: stack trace
 
     public static void debug(String msg) {
         LogHandler.logMessage(msg,LogType.DEBUG,logLevel);
@@ -28,5 +31,13 @@ public class QLogr {
 
     public static void setLogLevel(int _logLevel) {
         logLevel = _logLevel;
+    }
+
+    public static boolean isOutputToFile() {
+        return outputToFile;
+    }
+
+    public static void setOutputToFile(boolean outputToFile) {
+        QLogr.outputToFile = outputToFile;
     }
 }
