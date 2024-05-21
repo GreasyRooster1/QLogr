@@ -4,8 +4,6 @@ public class QLogr {
     private static int logLevel = 5;
     private static boolean outputToFile = false;
 
-    //todo: stack trace
-
     public static void debug(String msg) {
         LogHandler.logMessage(msg,LogType.DEBUG,logLevel);
     }
@@ -23,6 +21,9 @@ public class QLogr {
     }
     public static void fatal(String msg) {
         LogHandler.logMessage(msg,LogType.FATAL,logLevel);
+    }
+    public static void trace(String msg) {
+        LogHandler.stackTrace(msg);
     }
 
     public static int getLogLevel() {

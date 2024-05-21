@@ -5,3 +5,50 @@
 [4/20/2024-11:37:7.748 | Error]: i have had an error!
 [4/20/2024-11:37:7.748 | Critical]: critical issue!
 [4/20/2024-11:37:7.749 | Fatal]: man im dead 💀
+[4/20/2024-11:43:39.777 | Info]: Bound logs to logTest.log
+[4/20/2024-11:43:39.800 | Debug]: this is some debug message
+[4/20/2024-11:43:39.800 | Info]: this is some info
+[4/20/2024-11:43:39.801 | Warn]: oopsies, something went wrong
+[4/20/2024-11:43:39.801 | Error]: i have had an error!
+[4/20/2024-11:43:39.801 | Critical]: critical issue!
+[4/20/2024-11:43:39.801 | Fatal]: man im dead 💀
+[4/20/2024-11:43:39.802 | Fatal]: god damn: 
+[4/20/2024-11:43:58.597 | Info]: Bound logs to logTest.log
+[4/20/2024-11:43:58.621 | Debug]: this is some debug message
+[4/20/2024-11:43:58.622 | Info]: this is some info
+[4/20/2024-11:43:58.622 | Warn]: oopsies, something went wrong
+[4/20/2024-11:43:58.622 | Error]: i have had an error!
+[4/20/2024-11:43:58.623 | Critical]: critical issue!
+[4/20/2024-11:43:58.623 | Fatal]: man im dead 💀
+[4/20/2024-11:43:58.624 | Trace]: god damn: :
+java.base/java.lang.Thread.getStackTrace(Thread.java:2550)
+core.LogHandler.stackTrace(LogHandler.java:25)
+core.QLogr.trace(QLogr.java:26)
+core.Main.main(Main.java:20)
+
+[4/20/2024-11:44:11.411 | Info]: Bound logs to logTest.log
+[4/20/2024-11:44:11.435 | Debug]: this is some debug message
+[4/20/2024-11:44:11.435 | Info]: this is some info
+[4/20/2024-11:44:11.436 | Warn]: oopsies, something went wrong
+[4/20/2024-11:44:11.436 | Error]: i have had an error!
+[4/20/2024-11:44:11.436 | Critical]: critical issue!
+[4/20/2024-11:44:11.436 | Fatal]: man im dead 💀
+[4/20/2024-11:44:11.438 | Trace]: god damn: :
+java.base/java.lang.Thread.getStackTrace(Thread.java:2550)
+core.LogHandler.stackTrace(LogHandler.java:25)
+core.QLogr.trace(QLogr.java:26)
+core.Main.main(Main.java:20)
+
+[4/20/2024-11:44:32.77 | Info]: Bound logs to logTest.log
+[4/20/2024-11:44:32.101 | Debug]: this is some debug message
+[4/20/2024-11:44:32.102 | Info]: this is some info
+[4/20/2024-11:44:32.102 | Warn]: oopsies, something went wrong
+[4/20/2024-11:44:32.102 | Error]: i have had an error!
+[4/20/2024-11:44:32.103 | Critical]: critical issue!
+[4/20/2024-11:44:32.103 | Fatal]: man im dead 💀
+[4/20/2024-11:44:32.104 | Trace]: god damn: 
+java.base/java.lang.Thread.getStackTrace(Thread.java:2550)
+core.LogHandler.stackTrace(LogHandler.java:25)
+core.QLogr.trace(QLogr.java:26)
+core.Main.main(Main.java:20)
+

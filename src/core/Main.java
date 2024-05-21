@@ -16,5 +16,7 @@ public class Main {
         err("i have had an error!");
         critical("critical issue!");
         fatal("man im dead 💀");
+
+        trace("god damn: ");
     }
 }
