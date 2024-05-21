@@ -1,9 +1,6 @@
 package core;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class FileHandler {
     private static String outputFilePath = "logTest.log";
@@ -22,10 +19,13 @@ public class FileHandler {
     }
 
     protected static void writeToLogFile(String content){
+        System.out.println(content);
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath, true));
-            writer.write(content);
-            writer.newLine();
+            FileWriter fw = new FileWriter(outputFilePath, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            PrintWriter out = new PrintWriter(bw);
+            out.println(content);
+            out.close();
         } catch (IOException e) {
             QLogr.err("Failed to write to file "+outputFilePath+"!");
             QLogr.setOutputToFile(false);
