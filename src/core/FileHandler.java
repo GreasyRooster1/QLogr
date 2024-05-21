@@ -19,7 +19,6 @@ public class FileHandler {
     }
 
     protected static void writeToLogFile(String content){
-        System.out.println(content);
         try {
             FileWriter fw = new FileWriter(outputFilePath, true);
             BufferedWriter bw = new BufferedWriter(fw);

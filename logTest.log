@@ -1,0 +1,7 @@
+[4/20/2024-11:37:7.724 | Info]: Bound logs to logTest.log
+[4/20/2024-11:37:7.747 | Debug]: this is some debug message
+[4/20/2024-11:37:7.747 | Info]: this is some info
+[4/20/2024-11:37:7.748 | Warn]: oopsies, something went wrong
+[4/20/2024-11:37:7.748 | Error]: i have had an error!
+[4/20/2024-11:37:7.748 | Critical]: critical issue!
+[4/20/2024-11:37:7.749 | Fatal]: man im dead 💀

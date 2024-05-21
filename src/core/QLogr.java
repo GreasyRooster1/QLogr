@@ -33,7 +33,7 @@ public class QLogr {
         logLevel = _logLevel;
     }
 
-    public static boolean isOutputToFile() {
+    public static boolean outputToFile() {
         return outputToFile;
     }
 

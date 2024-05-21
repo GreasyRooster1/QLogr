@@ -1,9 +1,10 @@
 package core;
 
 import core.Formats.DefaultFormat;
+import core.Styling.Style;
 
 import java.util.Calendar;
-import java.util.Date;
+import java.util.regex.Pattern;
 
 import static core.Styling.Style.RESET_ALL;
 
@@ -17,6 +18,9 @@ class LogHandler {
         }
         String formattedMessage = formatMessage(message,type);
         System.out.println(formattedMessage);
+        if(QLogr.outputToFile()){
+            FileHandler.writeToLogFile(stripStyle(formattedMessage));
+        }
     }
 
     private static String formatMessage(String message,LogType type){
@@ -35,5 +39,13 @@ class LogHandler {
     private static String getTime(){
         Calendar cal = Calendar.getInstance();
         return cal.get(Calendar.MONTH)+"/"+cal.get(Calendar.DAY_OF_MONTH)+"/"+cal.get(Calendar.YEAR)+"-"+Calendar.HOUR_OF_DAY+":"+cal.get(Calendar.MINUTE)+":"+cal.get(Calendar.SECOND)+"."+cal.get(Calendar.MILLISECOND);
+    }
+
+    private static String stripStyle(String str){
+        String out = str;
+        for(Style style: Style.values()){
+            out = out.replace(style.toString(), "");
+        }
+        return out;
     }
 }
