@@ -13,5 +13,10 @@ public class Main {
         err("i have had an error!");
         critical("critical issue!");
         fatal("man im dead 💀");
+
+        FileHandler.writeToLogFile("balls");
+        FileHandler.writeToLogFile("balls");
+        FileHandler.writeToLogFile("balls");
+        FileHandler.writeToLogFile("balls");
     }
 }

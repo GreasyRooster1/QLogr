@@ -1,11 +1,12 @@
 package core;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileHandler {
-    private static String outputFilePath = "";
+    private static String outputFilePath = "logTest.log";
 
     protected static void createLogFile(){
         try {
@@ -22,9 +23,9 @@ public class FileHandler {
 
     protected static void writeToLogFile(String content){
         try {
-            FileWriter writer = new FileWriter(outputFilePath);
-            writer.write("Files in Java might be tricky, but it is fun enough!");
-            writer.close();
+            BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath, true));
+            writer.write(content);
+            writer.newLine();
         } catch (IOException e) {
             QLogr.err("Failed to write to file "+outputFilePath+"!");
             QLogr.setOutputToFile(false);
