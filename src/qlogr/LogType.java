@@ -1,4 +1,4 @@
-package java;
+package qlogr;
 
 public enum LogType {
     DEBUG(5,"Debug"),

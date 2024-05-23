@@ -1,8 +1,8 @@
-package java;
+package qlogr;
 
-import java.Styling.Style;
+import qlogr.Styling.Style;
 
-import static java.Styling.Style.*;
+import static qlogr.Styling.Style.*;
 
 public abstract class FormatTemplate {
     private String prefix="";

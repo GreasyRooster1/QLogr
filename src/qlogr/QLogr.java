@@ -1,4 +1,4 @@
-package java;
+package qlogr;
 
 public class QLogr {
     private static int logLevel = 5;

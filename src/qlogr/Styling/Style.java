@@ -1,4 +1,4 @@
-package java.Styling;
+package qlogr.Styling;
 
 public enum Style {
     RESET_ALL("\u001B[0m"),

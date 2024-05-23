@@ -1,4 +1,4 @@
-package java;
+package qlogr;
 
 import java.io.*;
 

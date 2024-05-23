@@ -1,11 +1,11 @@
-package java;
+package qlogr;
 
-import java.Formats.DefaultFormat;
-import java.Styling.Style;
+import qlogr.Formats.DefaultFormat;
+import qlogr.Styling.Style;
 
 import java.util.Calendar;
 
-import static java.Styling.Style.RESET_ALL;
+import static qlogr.Styling.Style.RESET_ALL;
 
 
 class LogHandler {
