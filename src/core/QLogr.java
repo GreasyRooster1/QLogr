@@ -40,8 +40,8 @@ public class QLogr {
 
     public static void enableFileOutput(String path) {
         outputToFile = true;
-        FileHandler.createLogFile();
         FileHandler.setOutputFilePath(path);
+        FileHandler.createLogFile();
         info("Bound logs to "+path);
     }
 
