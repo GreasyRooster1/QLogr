@@ -1,12 +1,11 @@
-package core;
+package java;
 
-import core.Formats.DefaultFormat;
-import core.Styling.Style;
+import java.Formats.DefaultFormat;
+import java.Styling.Style;
 
 import java.util.Calendar;
-import java.util.regex.Pattern;
 
-import static core.Styling.Style.RESET_ALL;
+import static java.Styling.Style.RESET_ALL;
 
 
 class LogHandler {

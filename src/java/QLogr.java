@@ -1,4 +1,4 @@
-package core;
+package java;
 
 public class QLogr {
     private static int logLevel = 5;

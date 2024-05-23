@@ -1,8 +1,8 @@
-package core.Formats;
+package java.Formats;
 
-import core.FormatTemplate;
+import java.FormatTemplate;
 
-import static core.Styling.Style.*;
+import static java.Styling.Style.*;
 
 public class DefaultFormat extends FormatTemplate {
     public DefaultFormat() {

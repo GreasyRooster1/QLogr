@@ -1,4 +1,4 @@
-package core;
+package java;
 
 public enum LogType {
     DEBUG(5,"Debug"),

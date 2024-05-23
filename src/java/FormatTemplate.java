@@ -1,8 +1,8 @@
-package core;
+package java;
 
-import core.Styling.Style;
+import java.Styling.Style;
 
-import static core.Styling.Style.*;
+import static java.Styling.Style.*;
 
 public abstract class FormatTemplate {
     private String prefix="";

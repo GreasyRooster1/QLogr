@@ -1,4 +1,4 @@
-package core;
+package java;
 
 import java.io.*;
 

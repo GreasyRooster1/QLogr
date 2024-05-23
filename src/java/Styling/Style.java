@@ -1,4 +1,4 @@
-package core.Styling;
+package java.Styling;
 
 public enum Style {
     RESET_ALL("\u001B[0m"),
